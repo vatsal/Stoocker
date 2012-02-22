@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <style type="text/css">
+        .HideIt {display: none;}        
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+function OpenClose (id, actionItem)
+{
+    var openCloseLink = document.getElementById('OpencloseSign_' + id);
+    var detailText = document.getElementById('DetailText_' + id);
+    
+    detailText.style.display = actionItem;
+    if (actionItem == 'block')
+    {
+        openCloseLink.innerHTML = "<a href=\"javascript:;\" onclick=\"OpenClose(" + id + ", 'none')\" >[-]</a>";
+    }    
+    else  
+    { 
+        openCloseLink.innerHTML = "<a href=\"javascript:;\" onclick=\"OpenClose(" + id + ", 'block')\" >[+]</a>";
+    }   
+}
+</script>
+
+    <span id="OpenCloseSign_1">
+        <a href="javascript:;" onclick="OpenClose(1, 'block')" >[+]</a>
+    </span>
+    &nbsp;
+    <span id="Title_1">
+        <a href="#">This is the Title</a>
+    </span>
+    <span id="DetailText_1" class="HideIt">These are the Details</span>
+
+</body>
+</html>

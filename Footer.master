@@ -1,0 +1,73 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Footer.master.cs" Inherits="Footer" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Stoocker.com</title>
+    <meta name="keywords" content="stoocker!, stoocker.com, stoockers, stock, stock market, free stock recommendation, stock prediction, stock voting, stock prediction engine, stock movement prediction, stock recommendation, stock recommendation engine, financial news, market news, share prices, predict share prices for tomorrow, free website to predict stock price movement, expert ranking, collective intelligence, stock analytics, collaborative prediction of stock prices, short term trading algorithm, machine learning applied to the stock market, stock portfolio, vatsal shah, vatsals.com"/>
+    <meta name="description" content=
+        "Stoocker! is a Stock Recommendation Engine.
+        Helps you take informed decisions about stock investments.
+        Maintain a Portfolio of your stocks. 
+        Get updated News about the latest happenings in the Stock Market. 
+        Predict tomorrows movement of your favorite stocks.        
+        See what the other users Recommend about the stock movement for tomorrow." />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:contentplaceholder id="Main" runat="server"></asp:contentplaceholder>
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />       
+        
+        <div id="FooterDiv" style="width:100%; bottom: 0;">
+            <img alt="" src="Images/line.GIF" style="width: 580px; height: 13px" /><br />
+            <table style="width: 580px;">
+                <tr>
+                    <td style="background-color:#c8d2ff; width: 100px; height: 21px" onmouseover="this.style.backgroundColor='#e8e8ff'" onmouseout="this.style.backgroundColor='#c8d2ff'">
+                        <asp:LinkButton ID="AboutStoocksLinkButton" runat="server" OnClick="AboutStoocksLinkButton_Click" Font-Underline="false" ForeColor="Blue">About Stoocker</asp:LinkButton></td>
+                    <td style="background-color:#c8d2ff; width: 100px; height: 21px" onmouseover="this.style.backgroundColor='#e8e8ff'" onmouseout="this.style.backgroundColor='#c8d2ff'">
+                        <asp:LinkButton ID="ContactUsLinkButton" runat="server" OnClick="ContactUsLinkButton_Click" Font-Underline="false">Contact</asp:LinkButton></td>
+                    <td style="background-color:#c8d2ff; width: 100px; height: 21px" onmouseover="this.style.backgroundColor='#e8e8ff'" onmouseout="this.style.backgroundColor='#c8d2ff'">
+                        <asp:LinkButton ID="PrivacyPolicyLinkButton" runat="server" OnClick="PrivacyPolicyLinkButton_Click" Font-Underline="false">Privacy Policy</asp:LinkButton></td>
+                    <td style="background-color:#c8d2ff; width: 100px; height: 21px" onmouseover="this.style.backgroundColor='#e8e8ff'" onmouseout="this.style.backgroundColor='#c8d2ff'">
+                        <asp:LinkButton ID="FeedbackLinkButton" runat="server" OnClick="FeedbackLinkButton_Click" Font-Underline="false">Feedback</asp:LinkButton></td>                    
+                </tr>
+                <tr>
+                    <td align="left">
+                        <asp:Label ID="CopyrightLabel" runat="server"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+    
+    <!-- Start of StatCounter Code -->
+            <script type="text/javascript">
+                var sc_project=3454154; 
+                var sc_invisible=1; 
+                var sc_partition=38; 
+                var sc_security="8cd73800"; 
+            </script>
+
+            <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+            <noscript>
+            
+            <div class="statcounter">
+                <a href="http://www.statcounter.com/" target="_blank">
+                    <img class="statcounter" src="http://c39.statcounter.com/3454154/0/8cd73800/1/" alt="best counter" />
+                </a>
+            </div>
+            </noscript>
+        <!-- End of StatCounter Code -->
+    
+</body>
+</html>
